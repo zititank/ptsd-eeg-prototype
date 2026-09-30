@@ -1,0 +1,54 @@
+{
+  "format": "ptsd_eeg.weights/1",
+  "members_file": "c2g_members.npz",
+  "n_members": 90,
+  "n_bags": 100,
+  "n_features": 4,
+  "member_order": "random permutation, not recorded",
+  "recipe": "C2G",
+  "version": "ptsd_eeg_C2G",
+  "recipe_spec": {
+    "prep": "c1",
+    "subject_transform": "c1",
+    "bags": 100,
+    "clip": [
+      0.02,
+      0.98
+    ],
+    "gate": false,
+    "soma": false,
+    "min_data_gate": true
+  },
+  "feature_names": [
+    "rest_IAF",
+    "rest_rel_alpha_O",
+    "rest_rel_alpha_IAF",
+    "rest_rel_beta_O"
+  ],
+  "threshold": 0.5,
+  "fallback_score": 0.26666666666666666,
+  "qc": {
+    "min_duration_rest_s": 30.0,
+    "median_abs_r_min": 0.05,
+    "fp1fp2_r_min": 0.3,
+    "band_hz": [
+      2.0,
+      40.0
+    ]
+  },
+  "n_train": 90,
+  "n_ptsd": 24,
+  "n_negative": 66,
+  "strata_counts": {
+    "CTRL_B": 46,
+    "CTRL_other": 20,
+    "PTSD": 24
+  },
+  "protocol_sha256": "88ef6934f896d83ac2b5fa3e1f7c5a7e3ee6ad1cfe70bc97cf5a6f956a5bb047",
+  "amendment_sha256": "38ad28a931699b6e3c284fccff8e701df8724bc2f6475254a79ee1f6217c83d8",
+  "source_model_sha256": "c7e10a708ad9e09f850a13b7578618b15e90f02d832a8b8a63d073236c487ae4",
+  "dropped": [
+    "training_subject_ids",
+    "inner_audit"
+  ]
+}

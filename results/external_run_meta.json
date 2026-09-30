@@ -1,0 +1,12 @@
+{
+  "protocol_sha256": "44d869a0204dc9c9a7888814a0541e945234c9de1f2e14be41cf834a5f01c07a",
+  "amendment_sha256": "bfa1a059a440a2f6f62d15d2f8c1b086eadb68f9d90e9e769c6c4c7bd56f79eb",
+  "model_sha256": "c7e10a708ad9e09f850a13b7578618b15e90f02d832a8b8a63d073236c487ae4",
+  "model_recipe": "C2",
+  "n_primary": 15,
+  "n_scorable_all": 18,
+  "mde_one_sided": 0.6595431110948939,
+  "n_boot": 5000,
+  "n_perm": 20000,
+  "seed": 20260928
+}

@@ -1,0 +1,5 @@
+source,name,n_primary,n_ptsd,n_control,auc,ba,sensitivity,specificity,tp,tn,fp,fn,auc_lo,auc_hi,ba_lo,ba_hi,sensitivity_lo,sensitivity_hi,specificity_lo,specificity_hi
+"frozen v3 negative controls (restated, not recomputed)",header_only,90,24,66,0.9696969696969696,0.8598484848484849,0.75,0.9696969696969696,18,64,2,6,0.9242424242424242,1.0,0.768939393939394,0.943181818181818,0.5833333333333334,0.9166666666666666,0.9242424242424242,1.0
+"frozen v3 negative controls (restated, not recomputed)",header_OLS,90,24,66,0.0,0.5,0.0,1.0,0,66,0,24,0.0,0.0,0.5,0.5,0.0,0.0,1.0,1.0
+"frozen v3 negative controls (restated, not recomputed)",control_batch_EEG,66,46,20,0.85,0.875,1.0,0.75,46,15,5,0,0.7,1.0,0.775,0.95,1.0,1.0,0.55,0.9
+"frozen v3 negative controls (restated, not recomputed)",control_batch_OLS,66,46,20,0.55,0.55,1.0,0.1,46,2,18,0,0.35,0.75,0.5,0.625,1.0,1.0,0.0,0.25

@@ -1,0 +1,16 @@
+model,analysis,predeclared,n_training_subjects_excluded,note,auc,n_primary,fpr_soma_elderly,n_soma_elderly,proxy_points,fpr_ctrl_c,n_ctrl_c,n_ctrl_c_positive,fpr_ctrl_c_standard,n_O1_scorable,fpr_soma_unique,n_soma
+v3,a_exclude_unusable_rest_tier,True,0.0,training set unchanged (no training subject is tier unusable); refit = primary fit,0.7487373737373737,90.0,0.2692307692307692,78.0,29.53962703962704,0.1666666666666666,36.0,,,,,
+v3,b_CTRL_C_O1_only,True,,,,,,,,0.35,40.0,14.0,0.15,37.0,,
+v3,c_soma_duplicate_counted_once,True,,,,,0.2083333333333333,96.0,30.757575757575754,,,,,,0.273972602739726,73.0
+C1,a_exclude_unusable_rest_tier,False,0.0,training set unchanged (no training subject is tier unusable); refit = primary fit,0.8156565656565656,90.0,0.282051282051282,78.0,33.298368298368295,0.1666666666666666,36.0,,,,,
+C1,b_CTRL_C_O1_only,False,,,,,,,,0.35,40.0,14.0,0.15,37.0,,
+C1,c_soma_duplicate_counted_once,False,,,,,0.21875,96.0,34.56439393939394,,,,,,0.2876712328767123,73.0
+C2,a_exclude_unusable_rest_tier,True,0.0,training set unchanged (no training subject is tier unusable); refit = primary fit,0.8162878787878789,90.0,0.1666666666666666,78.0,35.643939393939405,0.1111111111111111,36.0,,,,,
+C2,b_CTRL_C_O1_only,True,,,,,,,,0.125,40.0,5.0,0.1,37.0,,
+C2,c_soma_duplicate_counted_once,True,,,,,0.125,96.0,36.477272727272734,,,,,,0.1643835616438356,73.0
+C3,a_exclude_unusable_rest_tier,False,0.0,training set unchanged (no training subject is tier unusable); refit = primary fit,0.5189393939393938,90.0,0.1025641025641025,78.0,19.08508158508158,0.1111111111111111,36.0,,,,,
+C3,b_CTRL_C_O1_only,False,,,,,,,,0.125,40.0,5.0,0.1,37.0,,
+C3,c_soma_duplicate_counted_once,False,,,,,0.0729166666666666,96.0,19.678030303030297,,,,,,0.0958904109589041,73.0
+C4,a_exclude_unusable_rest_tier,False,0.0,training set unchanged (no training subject is tier unusable); refit = primary fit,0.7803030303030303,90.0,0.0,78.0,36.81818181818181,0.0,36.0,,,,,
+C4,b_CTRL_C_O1_only,False,,,,,,,,0.025,40.0,1.0,0.0,37.0,,
+C4,c_soma_duplicate_counted_once,False,,,,,0.0,96.0,36.81818181818181,,,,,,0.0,73.0

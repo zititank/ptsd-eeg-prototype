@@ -1,0 +1,5 @@
+gate,description,passed,n,max_abs_diff,model,model_sha256,tolerance
+a_contract,"inference contract of the task, 14 stress cases",True,14,,C2G,c7e10a708ad9e09f850a13b7578618b15e90f02d832a8b8a63d073236c487ae4,1e-09
+b_retrain_oof,fresh CLI retrain reproduces the evaluation out-of-fold scores,True,90,4.996003610813204e-16,C2G,c7e10a708ad9e09f850a13b7578618b15e90f02d832a8b8a63d073236c487ae4,1e-09
+c_external_raw,packaged model on raw external folders equals evaluation scores,True,137,3.3306690738754696e-16,C2G,c7e10a708ad9e09f850a13b7578618b15e90f02d832a8b8a63d073236c487ae4,1e-09
+d_clean_venv,"clean virtual environment, pinned requirements only",True,74,0.0,C2G,c7e10a708ad9e09f850a13b7578618b15e90f02d832a8b8a63d073236c487ae4,1e-09

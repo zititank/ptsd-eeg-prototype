@@ -1,0 +1,12 @@
+{
+  "check": "delivered model.pkl (private code, predict CLI) vs public weights (public code, predict CLI)",
+  "data": "every real subject folder of the confidential dataset (training, somatoform, extended controls)",
+  "max_abs_diff": 1.6653345369377348e-16,
+  "n_decision_changed_at_0_5": 0,
+  "source_model_sha256": "c7e10a708ad9e09f850a13b7578618b15e90f02d832a8b8a63d073236c487ae4",
+  "public_weights_sha256": {
+    "c2g_members.npz": "89309e72057da794b899806cf2a819c29cdc58f2e8620f27c6e3d59e38d692fa",
+    "model_meta.json": "091b38fc463ff40172763e8b379f75836d105e341c99e3300a21106c8f7f0b3c"
+  },
+  "note": "Nonzero differences, if any, come only from floating-point summation order when the ensemble mean is taken over the permuted member order."
+}

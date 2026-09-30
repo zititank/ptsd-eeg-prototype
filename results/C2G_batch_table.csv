@@ -1,0 +1,7 @@
+model,batch,n_scorable,n_gated_full,n_gated_any,n_positive,positive_rate_folders,positive_rate_scorable,mean_score,median_score,splits
+C2G,PTSD,24,0,0,5,0.2,0.2083333333333333,0.3300984615600492,0.2945660986425092,"fallback_unscorable,outer_loso"
+C2G,CTRL_B,46,0,0,0,0.0,0.0,0.1092255683050493,0.1060905482473575,outer_loso
+C2G,CTRL_other,20,0,0,7,0.3333333333333333,0.35,0.3743489557710203,0.3199788971887233,"fallback_unscorable,outer_loso"
+C2G,SOMA,57,0,0,13,0.1756756756756756,0.2280701754385964,0.3125485479276998,0.2666666666666666,"fallback_unscorable,outer_ensemble"
+C2G,CTRL_C,37,1,1,4,0.1,0.1081081081081081,0.2704121768449742,0.2310319119715093,"fallback_unscorable,outer_ensemble"
+C2G,CTRL_elderly,21,0,0,0,0.0,0.0,0.1613151923382267,0.1417778818914524,"fallback_unscorable,outer_ensemble"
