@@ -1,0 +1,34 @@
+# Confidential data and anything per subject must never be committed.
+*.edf
+*.EDF
+*.bdf
+*.pkl
+*.pickle
+*.mat
+per_subject*/
+data/
+
+# Local outputs
+.scratch/
+.reproduce*/
+.demo/
+*.log
+predictions*.csv
+*_predictions.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Animation frames (deleted after encoding)
+media/.frames/

@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ptsd-eeg"
+version = "4.1.1"
+description = "Rest-EEG PTSD research prototype (6-channel consumer EEG headband). Not a medical device."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{ name = "Bogdan (zititank)" }]
+dependencies = [
+    "numpy>=1.26,<2",
+    "pandas>=2.2",
+    "scipy>=1.11",
+    "scikit-learn>=1.4",
+    "joblib>=1.3",
+]
+
+[project.urls]
+Repository = "https://github.com/zititank/ptsd-eeg-prototype"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "matplotlib>=3.8", "nbconvert>=7", "nbformat>=5", "ipykernel>=6"]
+
+[project.scripts]
+ptsd-eeg = "ptsd_eeg.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "examples"]
+markers = [
+    "data: needs the confidential dataset (set PTSD_DATA and PTSD_LAYOUT); skipped otherwise",
+    "slow: long-running (minutes)",
+]
+filterwarnings = ["ignore::DeprecationWarning"]
