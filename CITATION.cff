@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite it as below. Research prototype, not a medical device:
+  see DISCLAIMER.md.
+type: software
+title: "ptsd-eeg-prototype: a nested-LOSO resting-EEG pipeline and an honest negative result"
+version: 4.1.1
+license: MIT
+authors:
+  - given-names: "Bogdan"
+    alias: "zititank"
+    website: "https://github.com/zititank"
+  - alias: "AdetyTy"
+    website: "https://github.com/AdetyTy"
+  - alias: "Qwertyqwerty579"
+    website: "https://github.com/Qwertyqwerty579"
+repository-code: "https://github.com/zititank/ptsd-eeg-prototype"
+url: "https://github.com/zititank/ptsd-eeg-prototype"
+abstract: >-
+  A reproducible pipeline that scores a one-minute, eyes-closed recording from a 6-channel consumer EEG headband
+  for similarity to a PTSD cohort: four occipital spectral features, shrinkage LDA, a 90-member nested
+  leave-one-subject-out ensemble and a pre-registered decision rule. The headline AUC is explained by an
+  acquisition artefact in one control batch; against valid controls the model performs at chance. The data are
+  confidential and not included; the repository ships code, pickle-free weights, aggregate model metrics and a
+  synthetic demo.
+keywords:
+  - EEG
+  - PTSD
+  - resting state
+  - alpha rhythm
+  - nested cross-validation
+  - leave-one-subject-out
+  - pre-registration
+  - negative result

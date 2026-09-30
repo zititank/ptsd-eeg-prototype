@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    # Synthetic data only: the confidential dataset is never available here, so data-gated tests are deselected.
+    # No chromium either: screenshots are built locally (make screenshots) and committed.
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      OMP_NUM_THREADS: "1"
+      PYTHONHASHSEED: "0"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.lock
+
+      - name: Install pinned dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.lock
+          pip install -e . --no-deps
+
+      - name: Synthetic test suite
+        run: make test PYTHON=python
+
+      - name: Privacy scan (0 hits required)
+        run: make privacy PYTHON=python
+
+      - name: Numbers in the docs match results/
+        run: make numbers PYTHON=python
+
+      - name: Links, anchors and images in the docs
+        run: make links PYTHON=python
+
+      - name: Demo on synthetic EDF files
+        run: make demo PYTHON=python
+
+      - name: Installed console script
+        run: ptsd-eeg verify-weights
