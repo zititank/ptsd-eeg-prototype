@@ -337,9 +337,9 @@ EEG, per-subject rows, subject codes or recording dates, even from your own data
 
 | Who | GitHub | Role |
 |---|---|---|
-| Bogdan (zititank) | [@zititank](https://github.com/zititank) | Author and maintainer: pipeline, audits, pre-registration, presentation and oral defense |
-| AdetyTy | [@AdetyTy](https://github.com/AdetyTy) | Hackathon teammate - ML and data |
-| Qwertyqwerty579 | [@Qwertyqwerty579](https://github.com/Qwertyqwerty579) | Hackathon teammate - ML and data |
+| Bogdan (zititank) | [@zititank](https://github.com/zititank) | Author and maintainer: scientific backbone, pipeline, audits, pre-registration, presentation and oral defense |
+| AdetyTy | [@AdetyTy](https://github.com/AdetyTy) | ML and data engineer - model training/verification, data stabilization, results interpretation |
+| Qwertyqwerty579 | [@Qwertyqwerty579](https://github.com/Qwertyqwerty579) | Hackathon team-lead - ML and data, workflow verification, architecture design |
 
 The project reached the oral defense stage of an international medical AI hackathon (name withheld under the data
 agreement). The organisers and the people who recorded the data are not named, for the same reason. Development
